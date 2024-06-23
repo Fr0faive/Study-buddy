@@ -33,7 +33,7 @@ export default function Home() {
   ];
 
   return (
-    <main className="flex flex-col gap-4 min-h-screen max-w-96">
+    <main className="flex flex-col gap-4 min-h-screen max-w-96 p-5">
       <Header />
       <Search />
       <div className="flex flex-col gap-3">
