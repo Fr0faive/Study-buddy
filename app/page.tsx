@@ -40,7 +40,10 @@ export default function Home() {
         <h2 className="text-xl font-semibold">Continue Watching</h2>
         <div className="flex flex-col gap-3">
           {dataWatch.map((data) => (
-            <div className="w-full h-fit flex flex-row gap-5 border backdrop-shadow-2xl rounded-lg p-2 items-center">
+            <div
+              className="w-full h-fit flex flex-row gap-5 border backdrop-shadow-2xl rounded-lg p-2 items-center"
+              key={data.title}
+            >
               <img src={data.image} alt="" className="h-14 w-20 rounded-2xl" />
               <div className="flex flex-col w-full py-2">
                 <h3 className="text-md font-semibold">{data.title}</h3>

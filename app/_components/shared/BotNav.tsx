@@ -36,6 +36,7 @@ export default function BotNav() {
             className={`text-3xl ${
               pathname === data.path && "bg-white p-1 rounded-lg"
             }`}
+            key={data.name}
           >
             <a href={data.path}>{data.component}</a>
           </li>
